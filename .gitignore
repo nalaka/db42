@@ -1,0 +1,24 @@
+# Ignore everything
+*
+
+# Allow subdirectories
+!*/
+
+# Allow this .gitignore file and the ones in subdirectories
+!/.gitignore
+
+# Allow note files in the root directory only.
+!/LICENSE
+!/README.md
+!/TODO.md
+
+# Module and checksum files
+!go.mod
+!go.sum
+
+# Root level package
+!/*.go
+
+# Main package generating the db42 command line program
+/cmd/*.go
+!/cmd/db42/*.go
